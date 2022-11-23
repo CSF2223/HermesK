@@ -1,0 +1,131 @@
+/*
+Color Palette
+background color: #200439
+primary: #512C73
+secondary: #361356
+tertiary: #6F4D8F
+accent: #9277AC
+vegasGold: #c5b358
+white: #fff
+black: #000  
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+html {
+    /* If we add any padding or border onto an element, it does not affect the width of the element */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; font-weight: 300; background-image: linear-gradient(#256D85, #002B5B); color: #fff;
+}
+
+.person { display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;
+}
+
+.personImage { padding: 2rem;
+}
+
+.personImage img { border-radius: 4rem; box-shadow: 10px 10px #000; width: 200%; height: auto;
+}
+
+.personText { font-size: 0.8rem; padding-bottom: 2rem; text-align: center; letter-spacing: 5px;
+}
+
+.personName { color: #72FFFF; font-size: 2.5rem; text-transform: uppercase;
+}
+
+.personButton { margin:2rem; 
+}
+
+.button { background-color: #fff; padding: 1rem; border: 1px solid #9277AC; border-radius: 25px; font-size: 0.9rem; font-weight: 700; color: #200439; text-decoration: none; box-shadow: 8px 8px 4px #000;
+}
+
+.button:hover { background-color: #2B4865; color: #72FFFF; transform: scale(1.5);
+/* (150% zoom - Note: if th ezoom is too large, it will go outside of the view port) */
+}
+
+.projectsHeader { margin: 1.5rem 3rem; text-align: center; padding: 0.5rem; letter-spacing: 4px;
+}
+
+.projectCard { background-image: linear-gradient(#3B9AE1, #3B9AE1, #3B9AE1, #3B9AE1, #3120E0); color: #200439; margin: 4rem 2rem; padding: 0.5rem 2rem; text-align: center; border: 1px solid #9277AC; border-radius: 1rem; box-shadow: 10px 10px 5px #000;
+}
+
+.projectCard img { width: 100%; height: auto; border-radius: 3rem; margin: 1rem 0;
+}
+
+.projectCard img:hover { transform: scale(1.1);
+}
+
+.blue img:hover {
+    filter: brightness(150%);
+    filter: drop-shadow(0em .7em .3em cyan);
+}
+
+.red img:hover {
+    filter: brightness(150%);
+    filter: drop-shadow(0em .7em .3em #ff6161);
+}
+
+img {
+    transition: transform .2s; /* Animation */
+}
+
+.projectCard h2 { margin: 0.5rem 1rem 1.5rem 1rem; font-weight: 600;
+}
+
+.projectCard p { font-size: 1rem; font-weight: 400;
+}
+
+.projectIcons { display: flex; justify-content: space-evenly; font-size: 1.2rem; margin-top: 2rem;
+}
+
+.projectIcons p { margin: 0 0 1rem 0; font-size: 0.8rem;
+}
+
+.fa-github { font-size: 2.2rem; padding: 1.5rem;
+}
+
+.fa-file { font-size: 2.2rem; padding: 1.5rem;
+}
+
+footer { text-align: center; color: #c5b35; margin: 10rem 0; border-top: 1px solid #9277AC;
+}
+
+.copyright { margin: 1rem; padding: 1rem; font-size: 1rem; color: #c5b358; display: block;
+}
+
+.filler { display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0; height: 80vh; 
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 800px) {
+    .person { flex-direction: row; justify-content: space-evenly; align-items: center; height: 90vh;
+    }
+    
+    .personText { font-size: 1rem;
+    }
+    
+    .personName { font-size: 3.5rem;
+    }
+    
+    .button { font-size: 1.1rem;
+    }
+    
+    .projectGallery { display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;
+    }
+    
+    .projectCard {
+        max-width: 20%
+    }
+}
