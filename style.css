@@ -56,21 +56,26 @@ body {
 .projectCard img { width: 100%; height: auto; border-radius: 3rem; margin: 1rem 0;
 }
 
-.projectCard img:hover { transform: scale(1.1);
+.gray img:hover {
+    filter: drop-shadow(0em .0em .5em #D3D3D3);
 }
 
 .blue img:hover {
     filter: brightness(150%);
-    filter: drop-shadow(0em .7em .3em cyan);
+    filter: drop-shadow(0em .0em .5em cyan);
 }
 
 .red img:hover {
     filter: brightness(150%);
-    filter: drop-shadow(0em .7em .3em #ff6161);
+    filter: drop-shadow(0em .0em .5em #ff6161);
+}
+
+.projectCard img:hover {
+    transform: scale(1.1);
 }
 
 img {
-    transition: transform .2s; /* Animation */
+    transition: transform .2s, filter .3s; /* Animation */
 }
 
 .projectCard h2 { margin: 0.5rem 1rem 1.5rem 1rem; font-weight: 600;
