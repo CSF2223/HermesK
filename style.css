@@ -62,6 +62,12 @@ body {
     100% {box-shadow: 0rem 1rem 4rem purple;}
 }
 
+@keyframes COLOR {
+    0% {color: purple;}
+    50% {color: cyan;}
+    100% {color: purple;}
+}
+
 .projectsHeader { margin: 1.5rem 3rem; text-align: center; padding: 0.5rem; letter-spacing: 4px;
 }
 
@@ -72,6 +78,13 @@ body {
     animation-name: CHANGE, SHADOW;
     animation-timing-function: linear;
     animation-duration: 7.5s;
+    animation-iteration-count: infinite;
+}
+
+.dunno:hover {
+    animation-name: COLOR;
+    animation-timing-function: linear;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
@@ -112,10 +125,10 @@ img {
 .projectIcons p { margin: 0 0 1rem 0; font-size: 0.8rem;
 }
 
-.fa-github { font-size: 2.2rem; padding: 1.5rem;
+.fa-github { font-size: 2.2rem; padding: 1.5rem; color: purple;
 }
 
-.fa-file { font-size: 2.2rem; padding: 1.5rem;
+.fa-file { font-size: 2.2rem; padding: 1.5rem; color: purple;
 }
 
 footer { text-align: center; color: #c5b35; margin: 10rem 0; border-top: 1px solid #9277AC;
