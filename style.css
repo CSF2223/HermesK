@@ -71,7 +71,7 @@ body {
 .projectsHeader { margin: 1.5rem 3rem; text-align: center; padding: 0.5rem; letter-spacing: 4px;
 }
 
-.projectCard { background-color: rgb(25,25,25); color: #fff; margin: 4rem 2rem; padding: 0.5rem 2rem; text-align: center; border: 7.5px solid purple; box-shadow: 0rem 1rem 4rem purple; border-radius: 3rem;
+.projectCard { background-color: rgb(30,30,30); color: #fff; margin: 3rem 1.5rem; padding: 0.5rem 2rem; text-align: center; border: 10px solid purple; box-shadow: 0rem 1rem 4rem purple; border-radius: 3rem;
 }
 
 .projectCard:hover {
@@ -106,7 +106,7 @@ body {
 }
 
 .projectCard img:hover {
-    transform: scale(1.1);
+    transform: scale(1.075);
 }
 
 img {
@@ -137,8 +137,12 @@ footer { text-align: center; color: #c5b35; margin: 10rem 0; border-top: 1px sol
 .copyright { margin: 1rem; padding: 1rem; font-size: 1rem; color: #c5b358; display: block;
 }
 
-.filler { display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0; height: 80vh; 
+.filler { display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0px; height: 80vh; text-align: center;
 }
+
+.filler img { height: 50%; width: auto; border-radius: 50px;
+}
+
 
 
 
